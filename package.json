@@ -1,0 +1,40 @@
+{
+  "name": "gulp-static-cli",
+  "version": "0.1.0",
+  "description": "gulp-static-cli",
+  "keywords": [
+    "gulp-static-cli",
+    "cli",
+    "zce"
+  ],
+  "repository": "hynick/gulp-static-cli",
+  "license": "MIT",
+  "author": "hynick <hynick0903@gmail.com> (https://github.com/Lhynick/gulp-static-cli.git)",
+  "main": "lib/index.js",
+  "bin": "bin/gulp-static-cli.js",
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "lint": "standard --fix",
+    "prepare": "npm run lint"
+  },
+  "renovate": {
+    "extends": [
+      "zce"
+    ]
+  },
+  "dependencies": {
+    "cac": "^6.7.2"
+  },
+  "devDependencies": {
+    "standard": "16.0.3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}

@@ -30,14 +30,9 @@ $ yarn add gserve --dev
     |    |     ├── fonts
     |    |     └── scripts ·················· Javascript File
     |    └── index.html
-    ├── gulpfile.js
     ├── pages.config.js ····················· Gserve Config
     └── package.json
   ```
-  - gulpfile.js
-    ```Javascript
-      module.exports = require('gserve')
-    ```
   - pages.config.js
     ```Javascript
       // default config

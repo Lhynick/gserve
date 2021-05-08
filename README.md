@@ -1,4 +1,4 @@
-# gulp-static-cli
+# GServe
 
 [![License][license-img]][license-url]
 [![NPM Downloads][downloads-img]][downloads-url]
@@ -7,85 +7,63 @@
 [![devDependency Status][devdependency-img]][devdependency-url]
 [![Code Style][style-img]][style-url]
 
-> gulp-static-cli
+> A gulp workflow for web app
 
 ## Installation
 
 ```shell
-$ npm install gulp-static-cli
+$ npm install gserve --dev
 
 # or yarn
-$ yarn add gulp-static-cli
+$ yarn add gserve --dev
 ```
 
 ## Usage
-
-<!-- TODO: Introduction of Usage -->
-
-```javascript
-const gulpStaticCli = require('gulp-static-cli')
-const result = gulpStaticCli('w')
-// result => 'w@zce.me'
-```
-
-## API
-
-<!-- TODO: Introduction of API -->
-
-### gulpStaticCli(input, options?)
-
-#### input
-
-- Type: `string`
-- Details: name string
-
-#### options
-
-##### host
-
-- Type: `string`
-- Details: host string
-- Default: `'zce.me'`
-
-## CLI Usage
-
-<!-- TODO: Introduction of CLI -->
-
-Use npx:
-
-```shell
-$ npx gulp-static-cli <input> [options]
-```
-
-Globally install:
-
-```shell
-$ npm install gulp-static-cli -g
-# or yarn
-$ yarn global add gulp-static-cli
-```
-
-```shell
-$ gulp-static-cli --help
-gulp-static-cli/0.1.0
-
-Usage:
-  $ gulp-static-cli <input>
-
-Commands:
-  <input>  Sample cli program
-
-For more info, run any command with the `--help` flag:
-  $ gulp-static-cli --help
-
-Options:
-  --host <host>  Sample options
-  -h, --help     Display this message
-  -v, --version  Display version number
-
-Examples:
-  $ gulp-static-cli w --host zce.me
-```
+- Default Project Framework
+  ```
+    .
+    ├── src
+    |    ├── public
+    |    ├── assets
+    |    |     ├── styles ··················· Sass Stylesheet
+    |    |     ├── images
+    |    |     ├── fonts
+    |    |     └── scripts ·················· Javascript File
+    |    └── index.html
+    ├── gulpfile.js
+    ├── pages.config.js ····················· Gserve Config
+    └── package.json
+  ```
+  - gulpfile.js
+    ```Javascript
+      module.exports = require('gserve')
+    ```
+  - pages.config.js
+    ```Javascript
+      // default config
+      module.exports = {
+        output: 'dist',
+        temp: 'dist/temp',
+        src: 'src',
+        path: {
+          style: 'assets/styles/*.scss',
+          script: 'assets/scripts/*.js',
+          image: 'assets/images/**',
+          font: 'assets/fonts/**',
+          html: '*.html'
+        },
+        public: 'public',
+        data: {}
+      }
+    ```
+- Usage
+  ```shell
+    Start develop server:
+      yarn gserve develop
+    
+    Build for prouduction:
+      yarn gserve build
+  ```
 
 ## Related
 

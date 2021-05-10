@@ -77,19 +77,19 @@ $ yarn add gserve --dev
 
 ## License
 
-[MIT](LICENSE) &copy; [hynick](https://github.com/Lhynick/gulp-static-cli.git)
+[MIT](LICENSE) &copy; [lhynick](https://github.com/Lhynick/gserve.git)
 
 
 
-[license-img]: https://img.shields.io/github/license/hynick/gulp-static-cli
-[license-url]: https://github.com/hynick/gulp-static-cli/blob/master/LICENSE
-[downloads-img]: https://img.shields.io/npm/dm/gulp-static-cli
-[downloads-url]: https://npm.im/gulp-static-cli
-[version-img]: https://img.shields.io/npm/v/gulp-static-cli
-[version-url]: https://npm.im/gulp-static-cli
-[dependency-img]: https://img.shields.io/david/hynick/gulp-static-cli
-[dependency-url]: https://david-dm.org/hynick/gulp-static-cli
-[devdependency-img]: https://img.shields.io/david/dev/hynick/gulp-static-cli
-[devdependency-url]: https://david-dm.org/hynick/gulp-static-cli?type=dev
+[license-img]: https://img.shields.io/github/license/lhynick/gserve
+[license-url]: https://github.com/lhynick/gserve/blob/master/LICENSE
+[downloads-img]: https://img.shields.io/npm/dm/gserve
+[downloads-url]: https://npm.im/gserve
+[version-img]: https://img.shields.io/npm/v/gserve
+[version-url]: https://npm.im/gserve
+[dependency-img]: https://img.shields.io/david/lhynick/gserve
+[dependency-url]: https://david-dm.org/lhynick/gserve
+[devdependency-img]: https://img.shields.io/david/dev/lhynick/gserve
+[devdependency-url]: https://david-dm.org/lhynick/gserve?type=dev
 [style-img]: https://img.shields.io/badge/code_style-standard-brightgreen
 [style-url]: https://standardjs.com

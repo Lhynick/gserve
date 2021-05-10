@@ -6,9 +6,9 @@
     "gserve",
     "cli"
   ],
-  "repository": "hynick/gserve",
+  "repository": "lhynick/gserve",
   "license": "MIT",
-  "author": "hynick <hynick0903@gmail.com> (https://github.com/Lhynick/gserve.git)",
+  "author": "lhynick <hynick0903@gmail.com> (https://github.com/Lhynick/gserve.git)",
   "main": "lib/index.js",
   "bin": "bin/gserve.js",
   "files": [
